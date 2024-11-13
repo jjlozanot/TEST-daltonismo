@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test de Daltonismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test de Daltonismo</h1>
+        <p>Responde a las siguientes preguntas para saber si tienes algún tipo de daltonismo.</p>
+
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p>¿Qué número ves en la siguiente imagen?</p>
+            <img src="https://i.imgur.com/EnlaceImagen1.png" alt="Test de colores" width="200px">
+            <select id="respuesta1">
+                <option value="no">No veo ningún número</option>
+                <option value="5">5</option>
+                <option value="3">3</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p>¿Qué número ves en la siguiente imagen?</p>
+            <img src="https://i.imgur.com/EnlaceImagen2.png" alt="Test de colores" width="200px">
+            <select id="respuesta2">
+                <option value="no">No veo ningún número</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+
+        <!-- Botón para enviar respuestas -->
+        <button onclick="evaluarDaltonismo()">Evaluar</button>
+
+        <!-- Resultado -->
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
